@@ -23,11 +23,16 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack --watch --mode=development"
+    "start": "webpack --watch --mode=development",
+    "postinstall": "webpack"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/christianwooddell/Full-Stack-Project.git"
+  },
+  "engines": {
+    "node": "15.8.0",
+    "npm": "7.5.0"
   },
   "keywords": [],
   "author": "",
