@@ -1,3 +1,8 @@
-<div id="root">
-<h1>React is not working bestie :(</h1>
-</div>
+<% if logged_in? %>
+  <script id="bootstrap-current-user" type="text/javascript">
+  	window.currentUser = <%= render("/api/users/user.json.jbuilder",
+  		user: current_user).html_safe %>
+  </script>
+<% end %>
+
+<div id="root">React is not working bestie :(</div>
