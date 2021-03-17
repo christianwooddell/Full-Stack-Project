@@ -1,16 +1,16 @@
 import React from "react";
 import SignupContainer from "./session/signup_container";
-// import Login from "./session/login_container";
-// import LandingPage from "./landing_page/landing_page";
+import LoginContainer from "./session/login_container";
+import LandingPage from "./landing_page/landing_page";
 import { Route } from "react-router-dom";
 
 
 const App = () => (
    <div>
 
-       {/* <Route expact path="/browse" component={LandingPage} /> */}
+       <Route path="/home" component={LandingPage} />
        <Route path="/signup" component={SignupContainer} />
-       {/* <Route path="/login" component={Login} /> */}
+       <Route path="/login" component={LoginContainer} />
    </div>
 );
 

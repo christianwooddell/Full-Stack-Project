@@ -7,10 +7,10 @@ class Signup extends React.Component{
             username: "",
             email: "",
             password: "",
-            gender: "", //do radio buttons here later
-            dob_month: "", //fix this
-            dob_day: "", //fix this
-            dob_year: "", //fix this
+            gender: "", 
+            dob_month: "",
+            dob_day: "",
+            dob_year: "", 
         };
         this.handleSubmit = this.handleSubmit.bind(this);
     }
@@ -27,7 +27,7 @@ class Signup extends React.Component{
     handleSubmit(e) {
         e.preventDefault();
         this.props.processForm(this.state)
-            .then( () => this.props.history.push("/browse")); //redirect to index once we're logged in
+            .then( () => this.props.history.push("/home")); //redirect to index once we're logged in
     }
 
     render(){
@@ -74,29 +74,29 @@ class Signup extends React.Component{
                             </select>
                         </div>
                         <div className="register-dob_day">
-                            <input type="number" placeholder="DD" onChange={this.handleInput("dob_day")} />
+                            <input type="text" placeholder="DD" onChange={this.handleInput("dob_day")} />
                         </div>
                         <div className="register-dob_year">
-                            <input type="number" placeholder="YYYY" onChange={this.handleInput("dob_year")} />
+                            <input type="text" placeholder="YYYY" onChange={this.handleInput("dob_year")} />
                         </div>
                     </div>
                     <label>Gender:</label>
                     <label>
                         <input type="radio"
+                            name="gender"
                             value="Male"
-                            placeholder="Gender"
                             onChange={this.handleInput("gender")} />Male
                     </label>
                     <label>
                         <input type="radio"
+                            name="gender"
                             value="Female"
-                            placeholder="Gender"
                             onChange={this.handleInput("gender")} />Female
                     </label>
                     <label>
                         <input type="radio"
+                            name="gender"
                             value="Non-binary"
-                            placeholder="Gender"
                             onChange={this.handleInput("gender")} />Non-binary
                     </label>
                     <button onClick={this.handleSubmit}>Sign Up</button>
