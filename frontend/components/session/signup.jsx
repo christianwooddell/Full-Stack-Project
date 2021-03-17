@@ -14,9 +14,9 @@ class Signup extends React.Component{
         };
         this.handleSubmit = this.handleSubmit.bind(this);
     }
-    componentWillUnmount() {
-        this.props.clearErrors();
-    }
+    // componentWillUnmount() {
+    //     this.props.clearErrors();
+    // }
 
     handleInput(type) {
         return (e) => {
@@ -27,7 +27,7 @@ class Signup extends React.Component{
     handleSubmit(e) {
         e.preventDefault();
         this.props.processForm(this.state)
-            .then( () => this.props.history.push("/")); //redirect to index once we're logged in
+            .then( () => this.props.history.push("/browse")); //redirect to index once we're logged in
     }
 
     render(){

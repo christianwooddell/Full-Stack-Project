@@ -1958,3 +1958,438 @@ Migrating to ChangeUsersTableAgain (20210317192903)
   ↳ bin/rails:9
   [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ bin/rails:9
+Started GET "/" for ::1 at 2021-03-17 15:33:08 -0400
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/chrayshawn/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (4.6ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+
+SyntaxError - syntax error, unexpected ':', expecting keyword_end
+...ob_day, :dob_month, :dob_year :session_token, :password_dige...
+...                              ^
+/Users/chrayshawn/Documents/aA-Classwork/FullstackProject/spotifina/app/models/user.rb:2: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+...ession_token, :password_digest, presence: true 
+...                              ^:
+  app/models/user.rb:2:in `'
+  app/controllers/application_controller.rb:6:in `current_user'
+  app/controllers/application_controller.rb:14:in `logged_in?'
+  app/views/static_pages/root.html.erb:1:in `_app_views_static_pages_root_html_erb___4591526850566199625_70174234179960'
+
+Started POST "/__better_errors/ab6b0a2c1ac1add6/variables" for ::1 at 2021-03-17 15:33:08 -0400
+Started GET "/" for ::1 at 2021-03-17 15:33:24 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (5.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered static_pages/root.html.erb within layouts/application (22.4ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 1355ms (Views: 1343.9ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/" for ::1 at 2021-03-17 15:33:29 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered static_pages/root.html.erb within layouts/application (4.5ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 50ms (Views: 46.5ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/api/users" for ::1 at 2021-03-17 15:33:50 -0400
+
+SyntaxError - syntax error, unexpected ':', expecting ')'
+...ob_month, :dob_day, :dob_year :gender, :email)
+...                              ^
+/Users/chrayshawn/Documents/aA-Classwork/FullstackProject/spotifina/app/controllers/api/users_controller.rb:15: syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+...day, :dob_year :gender, :email)
+...                              ^:
+  app/controllers/api/users_controller.rb:15:in `'
+
+Started POST "/api/users" for ::1 at 2021-03-17 15:33:53 -0400
+
+SyntaxError - syntax error, unexpected ':', expecting ')'
+...ob_month, :dob_day, :dob_year :gender, :email)
+...                              ^
+/Users/chrayshawn/Documents/aA-Classwork/FullstackProject/spotifina/app/controllers/api/users_controller.rb:15: syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+...day, :dob_year :gender, :email)
+...                              ^:
+  app/controllers/api/users_controller.rb:15:in `'
+
+Started POST "/api/users" for ::1 at 2021-03-17 15:33:53 -0400
+
+SyntaxError - syntax error, unexpected ':', expecting ')'
+...ob_month, :dob_day, :dob_year :gender, :email)
+...                              ^
+/Users/chrayshawn/Documents/aA-Classwork/FullstackProject/spotifina/app/controllers/api/users_controller.rb:15: syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+...day, :dob_year :gender, :email)
+...                              ^:
+  app/controllers/api/users_controller.rb:15:in `'
+
+Started POST "/api/users" for ::1 at 2021-03-17 15:33:54 -0400
+
+SyntaxError - syntax error, unexpected ':', expecting ')'
+...ob_month, :dob_day, :dob_year :gender, :email)
+...                              ^
+/Users/chrayshawn/Documents/aA-Classwork/FullstackProject/spotifina/app/controllers/api/users_controller.rb:15: syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+...day, :dob_year :gender, :email)
+...                              ^:
+  app/controllers/api/users_controller.rb:15:in `'
+
+Started POST "/api/users" for ::1 at 2021-03-17 15:33:54 -0400
+
+SyntaxError - syntax error, unexpected ':', expecting ')'
+...ob_month, :dob_day, :dob_year :gender, :email)
+...                              ^
+/Users/chrayshawn/Documents/aA-Classwork/FullstackProject/spotifina/app/controllers/api/users_controller.rb:15: syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+...day, :dob_year :gender, :email)
+...                              ^:
+  app/controllers/api/users_controller.rb:15:in `'
+
+Started POST "/api/users" for ::1 at 2021-03-17 15:33:54 -0400
+
+SyntaxError - syntax error, unexpected ':', expecting ')'
+...ob_month, :dob_day, :dob_year :gender, :email)
+...                              ^
+/Users/chrayshawn/Documents/aA-Classwork/FullstackProject/spotifina/app/controllers/api/users_controller.rb:15: syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+...day, :dob_year :gender, :email)
+...                              ^:
+  app/controllers/api/users_controller.rb:15:in `'
+
+Started POST "/api/users" for ::1 at 2021-03-17 15:33:54 -0400
+
+SyntaxError - syntax error, unexpected ':', expecting ')'
+...ob_month, :dob_day, :dob_year :gender, :email)
+...                              ^
+/Users/chrayshawn/Documents/aA-Classwork/FullstackProject/spotifina/app/controllers/api/users_controller.rb:15: syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+...day, :dob_year :gender, :email)
+...                              ^:
+  app/controllers/api/users_controller.rb:15:in `'
+
+Started POST "/api/users" for ::1 at 2021-03-17 15:33:55 -0400
+
+SyntaxError - syntax error, unexpected ':', expecting ')'
+...ob_month, :dob_day, :dob_year :gender, :email)
+...                              ^
+/Users/chrayshawn/Documents/aA-Classwork/FullstackProject/spotifina/app/controllers/api/users_controller.rb:15: syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+...day, :dob_year :gender, :email)
+...                              ^:
+  app/controllers/api/users_controller.rb:15:in `'
+
+Started POST "/api/users" for ::1 at 2021-03-17 15:33:56 -0400
+
+SyntaxError - syntax error, unexpected ':', expecting ')'
+...ob_month, :dob_day, :dob_year :gender, :email)
+...                              ^
+/Users/chrayshawn/Documents/aA-Classwork/FullstackProject/spotifina/app/controllers/api/users_controller.rb:15: syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+...day, :dob_year :gender, :email)
+...                              ^:
+  app/controllers/api/users_controller.rb:15:in `'
+
+Started POST "/api/users" for ::1 at 2021-03-17 15:33:57 -0400
+
+SyntaxError - syntax error, unexpected ':', expecting ')'
+...ob_month, :dob_day, :dob_year :gender, :email)
+...                              ^
+/Users/chrayshawn/Documents/aA-Classwork/FullstackProject/spotifina/app/controllers/api/users_controller.rb:15: syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+...day, :dob_year :gender, :email)
+...                              ^:
+  app/controllers/api/users_controller.rb:15:in `'
+
+Started POST "/api/users" for ::1 at 2021-03-17 15:33:57 -0400
+
+SyntaxError - syntax error, unexpected ':', expecting ')'
+...ob_month, :dob_day, :dob_year :gender, :email)
+...                              ^
+/Users/chrayshawn/Documents/aA-Classwork/FullstackProject/spotifina/app/controllers/api/users_controller.rb:15: syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+...day, :dob_year :gender, :email)
+...                              ^:
+  app/controllers/api/users_controller.rb:15:in `'
+
+Started POST "/api/users" for ::1 at 2021-03-17 15:33:58 -0400
+
+SyntaxError - syntax error, unexpected ':', expecting ')'
+...ob_month, :dob_day, :dob_year :gender, :email)
+...                              ^
+/Users/chrayshawn/Documents/aA-Classwork/FullstackProject/spotifina/app/controllers/api/users_controller.rb:15: syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+...day, :dob_year :gender, :email)
+...                              ^:
+  app/controllers/api/users_controller.rb:15:in `'
+
+Started POST "/api/users" for ::1 at 2021-03-17 15:33:59 -0400
+
+SyntaxError - syntax error, unexpected ':', expecting ')'
+...ob_month, :dob_day, :dob_year :gender, :email)
+...                              ^
+/Users/chrayshawn/Documents/aA-Classwork/FullstackProject/spotifina/app/controllers/api/users_controller.rb:15: syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+...day, :dob_year :gender, :email)
+...                              ^:
+  app/controllers/api/users_controller.rb:15:in `'
+
+Started POST "/api/users" for ::1 at 2021-03-17 15:33:59 -0400
+
+SyntaxError - syntax error, unexpected ':', expecting ')'
+...ob_month, :dob_day, :dob_year :gender, :email)
+...                              ^
+/Users/chrayshawn/Documents/aA-Classwork/FullstackProject/spotifina/app/controllers/api/users_controller.rb:15: syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+...day, :dob_year :gender, :email)
+...                              ^:
+  app/controllers/api/users_controller.rb:15:in `'
+
+Started POST "/api/users" for ::1 at 2021-03-17 15:33:59 -0400
+
+SyntaxError - syntax error, unexpected ':', expecting ')'
+...ob_month, :dob_day, :dob_year :gender, :email)
+...                              ^
+/Users/chrayshawn/Documents/aA-Classwork/FullstackProject/spotifina/app/controllers/api/users_controller.rb:15: syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+...day, :dob_year :gender, :email)
+...                              ^:
+  app/controllers/api/users_controller.rb:15:in `'
+
+Started POST "/api/users" for ::1 at 2021-03-17 15:33:59 -0400
+
+SyntaxError - syntax error, unexpected ':', expecting ')'
+...ob_month, :dob_day, :dob_year :gender, :email)
+...                              ^
+/Users/chrayshawn/Documents/aA-Classwork/FullstackProject/spotifina/app/controllers/api/users_controller.rb:15: syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+...day, :dob_year :gender, :email)
+...                              ^:
+  app/controllers/api/users_controller.rb:15:in `'
+
+Started POST "/api/users" for ::1 at 2021-03-17 15:33:59 -0400
+
+SyntaxError - syntax error, unexpected ':', expecting ')'
+...ob_month, :dob_day, :dob_year :gender, :email)
+...                              ^
+/Users/chrayshawn/Documents/aA-Classwork/FullstackProject/spotifina/app/controllers/api/users_controller.rb:15: syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+...day, :dob_year :gender, :email)
+...                              ^:
+  app/controllers/api/users_controller.rb:15:in `'
+
+Started POST "/api/users" for ::1 at 2021-03-17 15:33:59 -0400
+
+SyntaxError - syntax error, unexpected ':', expecting ')'
+...ob_month, :dob_day, :dob_year :gender, :email)
+...                              ^
+/Users/chrayshawn/Documents/aA-Classwork/FullstackProject/spotifina/app/controllers/api/users_controller.rb:15: syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+...day, :dob_year :gender, :email)
+...                              ^:
+  app/controllers/api/users_controller.rb:15:in `'
+
+Started POST "/api/users" for ::1 at 2021-03-17 15:34:00 -0400
+
+SyntaxError - syntax error, unexpected ':', expecting ')'
+...ob_month, :dob_day, :dob_year :gender, :email)
+...                              ^
+/Users/chrayshawn/Documents/aA-Classwork/FullstackProject/spotifina/app/controllers/api/users_controller.rb:15: syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+...day, :dob_year :gender, :email)
+...                              ^:
+  app/controllers/api/users_controller.rb:15:in `'
+
+Started GET "/" for ::1 at 2021-03-17 15:34:47 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered static_pages/root.html.erb within layouts/application (6.7ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 59ms (Views: 55.6ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/users" for ::1 at 2021-03-17 15:35:14 -0400
+
+SyntaxError - syntax error, unexpected ':', expecting ')'
+...ob_month, :dob_day, :dob_year :gender, :email)
+...                              ^
+/Users/chrayshawn/Documents/aA-Classwork/FullstackProject/spotifina/app/controllers/api/users_controller.rb:15: syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+...day, :dob_year :gender, :email)
+...                              ^:
+  app/controllers/api/users_controller.rb:15:in `'
+
+Started GET "/" for ::1 at 2021-03-17 15:45:32 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered static_pages/root.html.erb within layouts/application (20.3ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 465ms (Views: 455.2ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/api/users" for ::1 at 2021-03-17 15:45:46 -0400
+
+SyntaxError - syntax error, unexpected ':', expecting ')'
+...ob_month, :dob_day, :dob_year :gender, :email)
+...                              ^
+/Users/chrayshawn/Documents/aA-Classwork/FullstackProject/spotifina/app/controllers/api/users_controller.rb:15: syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+...day, :dob_year :gender, :email)
+...                              ^:
+  app/controllers/api/users_controller.rb:15:in `'
+
+Started GET "/" for ::1 at 2021-03-17 15:47:07 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered static_pages/root.html.erb within layouts/application (29.8ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 599ms (Views: 588.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2021-03-17 15:47:10 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered static_pages/root.html.erb within layouts/application (3.6ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 103ms (Views: 98.7ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/users" for ::1 at 2021-03-17 15:47:22 -0400
+
+SyntaxError - syntax error, unexpected ':', expecting ')'
+...ob_month, :dob_day, :dob_year :gender, :email)
+...                              ^
+/Users/chrayshawn/Documents/aA-Classwork/FullstackProject/spotifina/app/controllers/api/users_controller.rb:15: syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+...day, :dob_year :gender, :email)
+...                              ^:
+  app/controllers/api/users_controller.rb:15:in `'
+
+Started GET "/" for ::1 at 2021-03-17 15:47:53 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered static_pages/root.html.erb within layouts/application (40.6ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 83ms (Views: 47.7ms | ActiveRecord: 32.0ms)
+
+
+Started POST "/api/users" for ::1 at 2021-03-17 15:48:08 -0400
+Processing by Api::UsersController#create as JSON
+  Parameters: {"user"=>{"username"=>"asdkflja", "email"=>"asdlfkjs@gmail.com", "password"=>"[FILTERED]", "gender"=>"Male", "dob_month"=>"01", "dob_day"=>"12", "dob_year"=>"1231"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/users_controller.rb:4
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "asdlfkjs@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:4
+  [1m[36mUser Create (5.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "session_token", "password_digest", "email", "gender", "created_at", "updated_at", "dob_day", "dob_month", "dob_year") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["username", "asdkflja"], ["session_token", "s42EAAzTcNnTtOsjgEFwmg"], ["password_digest", "$2a$12$MJQtq9V/R6LqUHD1jqf0WueXwJa/4C6TdH0nrwbgwVdJpMkCNd7gW"], ["email", "asdlfkjs@gmail.com"], ["gender", "Male"], ["created_at", "2021-03-17 19:48:08.736502"], ["updated_at", "2021-03-17 19:48:08.736502"], ["dob_day", 12], ["dob_month", 1], ["dob_year", 1231]]
+  ↳ app/controllers/api/users_controller.rb:4
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/users_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:32
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "asdlfkjs@gmail.com"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:32
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "W4YBq_r_QYAITTjuwbATew"], ["updated_at", "2021-03-17 19:48:08.745163"], ["id", 1]]
+  ↳ app/models/user.rb:32
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:32
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/show.json.jbuilder (0.9ms)
+Completed 500 Internal Server Error in 256ms (ActiveRecord: 20.8ms)
+
+
+
+SyntaxError - syntax error, unexpected ':', expecting keyword_end
+...ob_month, :dob_day, :dob_year :gender, :premium
+...                              ^
+/Users/chrayshawn/Documents/aA-Classwork/FullstackProject/spotifina/app/views/api/users/show.json.jbuilder:1: syntax error, unexpected '\n', expecting &. or :: or '[' or '.'
+...ay, :dob_year :gender, :premium
+...                               ^:
+  app/views/api/users/show.json.jbuilder:1:in `'
+  app/controllers/api/users_controller.rb:6:in `create'
+
+Started POST "/api/users" for ::1 at 2021-03-17 15:49:05 -0400
+Processing by Api::UsersController#create as JSON
+  Parameters: {"user"=>{"username"=>"asdkflja", "email"=>"asdlfkjs@gmail.com", "password"=>"[FILTERED]", "gender"=>"Male", "dob_month"=>"01", "dob_day"=>"12", "dob_year"=>"1231"}}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/users_controller.rb:4
+  [1m[36mUser Exists (2.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "asdlfkjs@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:4
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/users_controller.rb:4
+Completed 422 Unprocessable Entity in 241ms (Views: 1.7ms | ActiveRecord: 2.8ms)
+
+
+Started POST "/api/users" for ::1 at 2021-03-17 15:49:22 -0400
+Processing by Api::UsersController#create as JSON
+  Parameters: {"user"=>{"username"=>"asdkflja", "email"=>"asdlfkjs12@gmail.com", "password"=>"[FILTERED]", "gender"=>"Male", "dob_month"=>"01", "dob_day"=>"12", "dob_year"=>"1231"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/users_controller.rb:4
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "asdlfkjs12@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:4
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "session_token", "password_digest", "email", "gender", "created_at", "updated_at", "dob_day", "dob_month", "dob_year") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["username", "asdkflja"], ["session_token", "8h7wB1E3gB7K_DmPolmxvg"], ["password_digest", "$2a$12$2pv6xxq0qhR3qmjBbrlZS.vulB404yrK6D6WJdmKdiwLpkYvl6Vsa"], ["email", "asdlfkjs12@gmail.com"], ["gender", "Male"], ["created_at", "2021-03-17 19:49:22.587619"], ["updated_at", "2021-03-17 19:49:22.587619"], ["dob_day", 12], ["dob_month", 1], ["dob_year", 1231]]
+  ↳ app/controllers/api/users_controller.rb:4
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/users_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:32
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "asdlfkjs12@gmail.com"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:32
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "eRCvIb69wmT4NlmbyoADMQ"], ["updated_at", "2021-03-17 19:49:22.593095"], ["id", 2]]
+  ↳ app/models/user.rb:32
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:32
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/show.json.jbuilder (1.3ms)
+Completed 200 OK in 234ms (Views: 10.9ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for ::1 at 2021-03-17 15:49:42 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "eRCvIb69wmT4NlmbyoADMQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (51.4ms)
+Completed 200 OK in 471ms (Views: 466.0ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/api/users" for ::1 at 2021-03-17 15:50:11 -0400
+Processing by Api::UsersController#create as JSON
+  Parameters: {"user"=>{"username"=>"hetttt", "email"=>"hasdfj@gmail.com", "password"=>"[FILTERED]", "gender"=>"Male", "dob_month"=>"02", "dob_day"=>"12", "dob_year"=>"1231"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/users_controller.rb:4
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "hasdfj@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/users_controller.rb:4
+Completed 422 Unprocessable Entity in 213ms (Views: 0.2ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/api/users" for ::1 at 2021-03-17 15:50:27 -0400
+Processing by Api::UsersController#create as JSON
+  Parameters: {"user"=>{"username"=>"hetttt", "email"=>"hasdsdsffj@gmail.com", "password"=>"[FILTERED]", "gender"=>"Male", "dob_month"=>"02", "dob_day"=>"12", "dob_year"=>"1231"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/users_controller.rb:4
+  [1m[36mUser Exists (1.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "hasdsdsffj@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:4
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("username", "session_token", "password_digest", "email", "gender", "created_at", "updated_at", "dob_day", "dob_month", "dob_year") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["username", "hetttt"], ["session_token", "-8Gj6810xrHCyCljvWbQhw"], ["password_digest", "$2a$12$BbNfp/q85crzOHLv.4BfrO//coLiCaZI4bdUCDyKpkxDETWU9BKDG"], ["email", "hasdsdsffj@gmail.com"], ["gender", "Male"], ["created_at", "2021-03-17 19:50:27.835268"], ["updated_at", "2021-03-17 19:50:27.835268"], ["dob_day", 12], ["dob_month", 2], ["dob_year", 1231]]
+  ↳ app/controllers/api/users_controller.rb:4
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/users_controller.rb:4
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:32
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "hasdsdsffj@gmail.com"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/models/user.rb:32
+  [1m[36mUser Update (0.5ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "trhKFT7tuMOWK-TrR2HC6Q"], ["updated_at", "2021-03-17 19:50:27.840931"], ["id", 3]]
+  ↳ app/models/user.rb:32
+  [1m[35m (3.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:32
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/show.json.jbuilder (1.3ms)
+Completed 200 OK in 249ms (Views: 11.3ms | ActiveRecord: 7.7ms)
+
+
