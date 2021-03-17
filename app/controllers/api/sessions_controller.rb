@@ -5,7 +5,7 @@ class Api::SessionsController < ApplicationController
             params[:user][:password]
         )
         if @user
-            logiin!(@user)
+            login!(@user)
             redirect_to "/api/" #redirect to home / index 
         else
             render json: ["Incorrect username or password."], status: 401

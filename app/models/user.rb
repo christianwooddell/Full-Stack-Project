@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-    validates :username, :birthday, :session_token, :password_digest, presence: true 
+    validates :username, :dob_day, :dob_month, :dob_year :session_token, :password_digest, presence: true 
     validates :password, length: {minimum: 8, allow_nil: true}
     validates :email, presence: true, uniqueness: true
     validates :gender, inclusion: {in: ["Male", "Female", "Non-binary"]}
