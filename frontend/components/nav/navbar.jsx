@@ -1,43 +1,23 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
-// import styling and logo
+import { Link } from "react-router-dom";
 
-// class NavBar extends React.Component {
-//     constructor(props) {
-//         super(props);
-//         this.logoutUser = this.logoutUser.bind(this)
-//     }
+const NavBar = ({ currentUser, logout }) => {
+    const sessionLinks = () => (
+        <nav className="login-signup">
+            <Link to="/login">Log in.</Link>
+            <Link to="/signup">Sign up.</Link>
+        </nav>
+    );
 
-//     logoutUser() {
-//         this.props.logout()
-//             .then(() => this.props.history.push("/"));
-//     }
+    const personalGreeting = () => (
+        <hgroup className="header-group">
+            <h2 className="header-name">Hi, {currentUser.username}!</h2>
+            <button className="header-button" onClick={logout}>Log Out</button>
+        </hgroup>
+    );
 
-//     render() {
-//         const { currentUser } = this.props;
-//         const displayUser = currentUser ? (
-//             <div className="navbar-user">
-//                 <Link to="/home">
-//                     <span className="navbar-username">{currentUser.username}</span>
-//                 </Link>
-//                 <span 
-//                     onClick={() => this.logoutUser()}
-//                     classname="user-logout">log out</span>
-                
-//             </div>
-//         ) : (
-//             <div>
-//                 <Link to="/signup" className="signup-button">Sign Up</Link>
-//                 <Link to="/login" className="login-button">Log In</Link>
-//             </div>
-//         );
-//         return (
-//             <nav className="nav-bar">
-//                 <div>logo and stuff</div>
-//             </nav>
-//         )
-//     }
-// }
+    return currentUser ? personalGreeting() : sessionLinks();
+}
 
 
 export default NavBar;

@@ -3,7 +3,7 @@ import SignupContainer from "./session/signup_container";
 import LoginContainer from "./session/login_container";
 import LandingPage from "./landing_page/landing_page";
 import NavBarContainer from "./nav/navbar_container";
-import { Route } from "react-router-dom";
+import { Route, Link, Switch } from "react-router-dom";
 
 import { AuthRoute, ProtectedRoute } from "../util/route_util";
 
@@ -11,9 +11,6 @@ import { AuthRoute, ProtectedRoute } from "../util/route_util";
 const App = () => (
    <div>
        <header>
-            <Link to="/" className="header-link">
-                <h1>Bench BnB</h1>
-            </Link>
            <NavBarContainer />
        </header>
        <Switch>
