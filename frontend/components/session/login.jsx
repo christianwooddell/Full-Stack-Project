@@ -31,10 +31,10 @@ class Login extends React.Component{
         return (
             <div className="login-container">
                 <form className="login-form" onSubmit={this.handleSubmit}>
-                    <label>Email address or username</label>
+                    <label>Email address</label>
                     <input type="text"
                         value={this.state.email}
-                        placeholder="Email address or username"
+                        placeholder="Email address"
                         onChange={this.handleInput("email")} />
                     <label>Password</label>
                     <input type="password"
