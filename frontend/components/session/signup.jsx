@@ -106,7 +106,6 @@ class Signup extends React.Component{
                 <p className="not-new-user">Already have an account?
                         <Link to="/login" className="login-link">Log in.</Link>
                 </p>
-                <h2>GET SPOTIFINA FREE</h2>
 
             </div>
         );
