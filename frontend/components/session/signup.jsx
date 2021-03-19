@@ -1,5 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSpotify } from "@fortawesome/free-brands-svg-icons";
+
 
 
 class Signup extends React.Component{
@@ -35,28 +38,39 @@ class Signup extends React.Component{
     render(){
         return (
             <div className="session-form">
+                <FontAwesomeIcon icon={faSpotify} className="spotify-logo" />
+                <h2>Sign up for free to start listening.</h2>
                 <form>
-                    <label>Username:
-                        <input type="text" 
-                        value={this.state.username} 
-                        placeholder="Username" 
-                        onChange={this.handleInput("username")} />
+                    <label>What's your email?
+                        <input type="text"
+                            value={this.state.email}
+                            placeholder="Enter your email."
+                            onChange={this.handleInput("email")} />
                     </label>
-                    <label>Email:
-                        <input type="text" 
-                        value={this.state.email} 
-                        placeholder="Email" 
-                        onChange={this.handleInput("email")} />
+                    <label>Confirm your email
+                        <input type="text"
+                            value={this.state.email}
+                            placeholder="Enter your email again." />
                     </label>
-                    <label>Password:
-                        <input type="password" 
-                        value={this.state.password} 
-                        placeholder="Password" 
-                        onChange={this.handleInput("password")} />
+                    <label>Create a password
+                        <input type="password"
+                            value={this.state.password}
+                            placeholder="Create a password."
+                            onChange={this.handleInput("password")} />
                     </label>
 
+                    <label>What should we call you?
+                        <input type="text" 
+                        value={this.state.username} 
+                        placeholder="Enter a profile name." 
+                        onChange={this.handleInput("username")} />
+                        <p>This appears on your profile.</p>
+                    </label>
+                    
+           
                     <div className="dob">
                         <label>What's your date of birth?</label>
+                        <label>Month</label>
                         <div className="month">
                             <select id="register-dob_month" onChange={this.handleInput("dob_month")}>
                                 <option value defaultValue>Month</option>
@@ -74,14 +88,16 @@ class Signup extends React.Component{
                                 <option value="12">December</option>
                             </select>
                         </div>
+                        <label>Day</label>
                         <div className="register-dob_day">
                             <input type="text" placeholder="DD" onChange={this.handleInput("dob_day")} />
                         </div>
+                        <label>Year</label>
                         <div className="register-dob_year">
                             <input type="text" placeholder="YYYY" onChange={this.handleInput("dob_year")} />
                         </div>
                     </div>
-                    <label>Gender:</label>
+                    <label>What's your gender?</label>
                     <label>
                         <input type="radio"
                             name="gender"
@@ -100,6 +116,8 @@ class Signup extends React.Component{
                             value="Non-binary"
                             onChange={this.handleInput("gender")} />Non-binary
                     </label>
+                    <p>By clicking on Sign up, you agree to Spotifina's Terms and Conditions of Use.</p>
+                    <p>To learn more about how Spotifina collects, uses, shares and protects your personal data please read Spotifina's Privacy Policy.</p>
                     <button onClick={this.handleSubmit}>Sign Up</button>
                 </form>
 

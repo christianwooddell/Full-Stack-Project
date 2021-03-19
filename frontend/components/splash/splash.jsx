@@ -1,10 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import NavBar from "../nav/navbar";
 
 class Splash extends React.Component {
     render() {
         return(
             <div>
+                <NavBar />
                 <section>
                     <div className="splash">
                         <div className="splash-bg"></div>
