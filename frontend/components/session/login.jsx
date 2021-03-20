@@ -57,10 +57,16 @@ class Login extends React.Component{
                         placeholder="Password"
                         onChange={this.handleInput("password")} />
                     </div>
-                    <button className="btn-login">LOG IN</button>
-                    
+                    <div id="btnlogincontainer">
+                        <button className="btn-login">LOG IN</button>
+                    </div>
                     <h4>Don't have an account?</h4>
-                    <Link to="/signup">SIGN UP FOR SPOTIFINA</Link>
+
+                    <div>
+                        <div id="signuplinkcontainer">
+                            <Link to="/signup">SIGN UP FOR SPOTIFINA</Link>
+                        </div>
+                    </div>
                 </form>
             </div>
             </div>

@@ -17,7 +17,24 @@
     .btn-login {
         cursor: pointer;
         border: 0px;
-        width: 450px;
+        width: 200px;
+        margin: 20px;
+        font-weight: bold;
+        border-radius: 500px;
+        font-size: 14px;
+        letter-spacing: 2px;
+        padding: 17px 48px;
+        background-color: rgb(29, 185, 84);
+        color: rgb(255, 255, 255);
+
+    }
+    #signuplinkcontainer {
+        cursor: pointer;
+        justify-content: center;
+        text-decoration: none;
+        border: 5px;
+        width: 200px;
+        margin: 20px;
         font-weight: bold;
         border-radius: 500px;
         font-size: 14px;
@@ -28,6 +45,7 @@
 
     }
 
+   
 
     
 }
