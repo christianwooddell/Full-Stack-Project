@@ -1,7 +1,7 @@
 import React from "react";
 import SignupContainer from "./session/signup_container";
 import LoginContainer from "./session/login_container";
-import HomePage from "./home_page/home_page";
+import HomePageContainer from "./home_page/home_page_container";
 import Splash from "./splash/splash";
 import { Route, Link, Switch } from "react-router-dom";
 
@@ -12,7 +12,7 @@ const App = () => (
    <div>
        <Switch>
             <AuthRoute exact path="/" component={Splash} />
-            <ProtectedRoute path="/home" component={HomePage} />
+            <ProtectedRoute path="/home" component={HomePageContainer} />
             <AuthRoute path="/signup" component={SignupContainer} />
             <AuthRoute path="/login" component={LoginContainer} />
         </Switch>

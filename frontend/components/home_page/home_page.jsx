@@ -1,26 +1,23 @@
 import React from "react";
 import { render } from "react-dom";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSpotify } from "@fortawesome/free-brands-svg-icons";
 
-class HomePage extends React.Component{
-    constructor(props) {
-        super(props);
-        this.logoutUser = this.logoutUser.bind(this);
-    }
 
-    logoutUser() {
-        this.props.logout()
-            .then(()=> this.props.history.push("/"));
-    }
-    render() {
-        const {currentUser} = this.props;
-        return(
-            <div>
-                <h1>look at all these songs bestie!</h1>
-                <button className="logout" onClick={()=> this.logoutUser()}>Log out</button>
-            </div>
-        )
-    }
+const HomePage = ({ currentUser, logout }) => {
+    const personalGreeting = () => (
+        <header>
+           
+                <FontAwesomeIcon icon={faSpotify} className="spotify-logo" />
+                <h4>Spotifina</h4>
+                <h2 className="header-name">Hi, {currentUser.username}!</h2>
+                <button className="header-button" onClick={logout}>Log Out</button>
+        
+        </header>
+    );
+
+    return personalGreeting();
 }
 
 export default HomePage;
