@@ -4,6 +4,6 @@ class Song < ApplicationRecord
     #belongs_to :album
     #has_one :artist 
 
-    #has_one_attached :audio_file
-    
+    has_one_attached :audio_file
+
 end
