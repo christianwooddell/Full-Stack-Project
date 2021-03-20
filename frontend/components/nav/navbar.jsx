@@ -17,8 +17,8 @@ const NavBar = ({ currentUser, logout }) => {
                 <li><a href="https://github.com/christianwooddell" id="navbarlink">Github</a></li>
                 <li><a href="/" id="navbarlink">Portfolio</a></li>
                 <li>|</li>
-                <li><Link to="/signup" id="navbarlink">Sign up</Link></li>
-                <li><Link to="/login" id="navbarlink">Log in</Link></li>
+                <li><Link to="/signup" id="navbarlink2">Sign up</Link></li>
+                <li><Link to="/login" id="navbarlink2">Log in</Link></li>
             </ul>
         </nav>
         </header>
