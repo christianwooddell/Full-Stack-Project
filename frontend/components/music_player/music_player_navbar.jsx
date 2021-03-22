@@ -3,11 +3,28 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSpotify } from "@fortawesome/free-brands-svg-icons";
 
-const MusicPlayerNavBar = ({ currentUser, logout }) => {
+class MusicPlayerNavBar extends React.Component{
+    constructor(props){
+        super(props)
+    }
+    render(){
+        function dropDownButton(){ 
+            const dropdown = document.getElementById("dropdownitems");
+            dropdown.classList.toggle("show");
+            window.onClick = function(e) {
+                if (!e.target.matches(".dropDownButton")) {
+                    if (dropdown.classList.contains("show")) {
+                        downdwn.classList.remove("show");
+                    }
+                }
+            }
+        }
+    
+
     const sessionLinks = () => (
         <header className="loggedinhead">
             <nav className="login-signup2">
-                <div href="/" className="navbarlogo">
+                <div href="/" className="musicnavbarlogo">
                     <FontAwesomeIcon icon={faSpotify} className="spotify-logo" />
                     <h4>Spotifina</h4>
                 </div>
@@ -16,13 +33,20 @@ const MusicPlayerNavBar = ({ currentUser, logout }) => {
                     <li><a href="https://github.com/christianwooddell" id="navbarlink">Github</a></li>
                     <li><a href="/" id="navbarlink">Portfolio</a></li>
                     <li>|</li>
-                    {/* dropdown here */}
+                    <div className="dropdownitems">
+                        <button onClick={dropDownButton} className="dropdownbtn">Profile</button>
+                        <div id="myDropdown" className="dropdown-content">
+                            <button className="logoutbutton" onClick={this.props.logout}>Log Out</button>
+                        </div>
+                    </div>
                 </ul>
             </nav>
         </header>
     );
 
+
     return sessionLinks();
+    }
 }
 
 

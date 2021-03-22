@@ -1,2 +1,9 @@
 import React from "react";
-import Navbar from './navbar/navbar_container';
+import MusicPlayerNavbar from './music_player_navbar_container';
+
+class MusicPlayer extends React.Component {
+    constructor(props) {
+        super(props);
+        this.
+    }
+}

@@ -10,8 +10,7 @@ const HomePage = ({ currentUser, logout }) => {
     const personalGreeting = () => (
         <header className="homepage">
                 <MusicPlayerNavBar />
-                <FontAwesomeIcon icon={faSpotify} className="spotify-logo" />
-                <h4>Spotifina</h4>
+                
                 <button className="header-button" onClick={logout}>Log Out</button>
         
         </header>
