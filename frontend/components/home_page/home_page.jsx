@@ -15,7 +15,9 @@ const HomePage = ({ currentUser, logout }) => {
                     <button className="header-button" onClick={logout}>Log Out</button>
                     
             </header>
-            <NowPlaying />
+            <footer>
+                <NowPlaying />
+            </footer>
         </div>
 
     );

@@ -1,5 +1,5 @@
 class Song < ApplicationRecord
-    validates :title, :album_id, :artist_id, presence: true
+    validates :title, :album_id, :artist_id, :duration, presence: true
 
     #belongs_to :album
     #has_one :artist 
