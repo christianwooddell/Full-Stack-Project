@@ -6,7 +6,7 @@ class Api::SessionsController < ApplicationController
         )
         if @user
             login!(@user)
-            render "home" #redirect to home / index 
+            render "api/users/show" #redirect to home / index 
         else
             render json: ["Incorrect username or password."], status: 401
         end #add a forgot your password?

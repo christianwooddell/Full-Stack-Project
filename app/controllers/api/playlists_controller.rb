@@ -27,7 +27,7 @@ class Api::PlaylistsController < ApplicationController
     def destroy 
         @playlist = current_user.playlists.find(params[:id])
         if @playlist && @playlist.delete 
-            render "home"
+            render "api/users/show"
         end 
     end 
 
