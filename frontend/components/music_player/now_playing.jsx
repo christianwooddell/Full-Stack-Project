@@ -10,8 +10,9 @@ class NowPlaying extends React.Component {
         return (
             <div className="nowplayingcontainer">
                 <audio controls className="nowplaying">
-                    <source src="Beez.mp3" type="audio/mpeg" />
+                    <source src="https://www.computerhope.com/jargon/m/example.mp3" type="audio/mpeg" />
                 </audio>
+               
             </div>
         )
     }
