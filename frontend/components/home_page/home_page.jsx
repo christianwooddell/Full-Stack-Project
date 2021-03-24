@@ -26,15 +26,7 @@ const HomePage = ({ currentUser, logout }) => {
 
     
 
-    
-    // render () {
-        // return (
-        //     personalGreeting();
-    //         <div className="musiccontainer">  
-    //             <NowPlaying />
-    //         </div>
-        // )
-    // }
+
 }
 
 export default HomePage;
