@@ -38,10 +38,12 @@ class Signup extends React.Component{
     render(){
         return (
             <div className="session-form">
-                <div className="spotifinalogo">
-                    <FontAwesomeIcon icon={faSpotify} className="spotify-logo" />
-                    <h4>Spotifina</h4>
-                </div>
+                <a href="/">
+                    <div className="spotifinalogo" id="spotifinalogotop">
+                        <FontAwesomeIcon icon={faSpotify} className="spotify-logo" />
+                        <h4>Spotifina</h4>
+                    </div>
+                </a>
                 <h3>Sign up for free to start listening.</h3>
                 <form>
                     <div className="inputbox">
@@ -53,15 +55,6 @@ class Signup extends React.Component{
                                 placeholder="Enter your email."
                                 onChange={this.handleInput("email")} />
     
-                    </div>
-                    <div className="inputbox">
-                        <div>
-                            <label>Confirm your email</label>
-                        </div>
-                        <input className="littlebox" type="text"
-                            value={this.state.email}
-                            placeholder="Enter your email again." 
-                            onChange={this.handleInput("email")}/>
                     </div>
                     <div className="inputbox">
                         <div>

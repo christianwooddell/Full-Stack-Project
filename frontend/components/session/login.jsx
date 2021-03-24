@@ -33,10 +33,12 @@ class Login extends React.Component{
     render() {
         return (
             <div className="login-container">
-                <div className="spotifinalogo">
-                    <FontAwesomeIcon icon={faSpotify} className="spotify-logo" />
-                    <h4>Spotifina</h4>
-                </div>
+                <a href="/">
+                    <div className="spotifinalogo" id="spotifinalogotop">
+                        <FontAwesomeIcon icon={faSpotify} className="spotify-logo" />
+                        <h4>Spotifina</h4>
+                    </div>
+                </a>
                 <div className="comeonin">
                 <form className="login-form" onSubmit={this.handleSubmit}>
                     <div>
