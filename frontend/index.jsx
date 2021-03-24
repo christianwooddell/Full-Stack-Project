@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
         store = configureStore();
     }
     ReactDOM.render(<Root store={store} />, root);
-
+    
     // window.signup = SessionAPIUtil.signUp;
     // window.login = SessionAPIUtil.login;
     // window.logout = SessionAPIUtil.logout;

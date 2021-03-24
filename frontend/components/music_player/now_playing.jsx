@@ -1,8 +1,7 @@
 import React from "react";
-import { connect } from "react-redux";
 import { getSong } from "../../actions/song_actions";
 import { fetchSongs } from "../../util/song_api_util";
-// import { currentSong } from "./now_playing_container";
+import { currentSong } from "./now_playing_container";
 import { playCurrentSong } from "../../actions/player_actions"
 
 
@@ -17,8 +16,8 @@ class NowPlaying extends React.Component {
 
         }
         // this.playAudio = this.playAudio.bind(this);
-        this.updateTime = this.updateTime.bind(this);
-        this.togglePlay = this.togglePlay.bind(this);
+        // this.updateTime = this.updateTime.bind(this);
+        // this.togglePlay = this.togglePlay.bind(this);
 
     }
 
@@ -62,12 +61,12 @@ class NowPlaying extends React.Component {
 
 
     render() {
-        const { currentSong } = this.props;
-        const { audio_url } = currentSong;
+        // const { currentSong } = this.props;
+        // const { audio_url } = currentSong;
         return (
             <div className="nowplayingcontainer">
                 <audio controls className="nowplaying">
-                    <source src={audio_url} />
+                    <source src={window.audiourl} />
                 </audio>
 
             </div>
