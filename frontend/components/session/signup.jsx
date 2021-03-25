@@ -74,7 +74,7 @@ class Signup extends React.Component{
                 <form>
                     <div className="inputbox">
                         <div>
-                            <label>What's your email?</label>
+                            <label className="inputprompt">What's your email?</label>
                         </div>
                             <input className="littlebox" type="email"
                                 value={this.state.email}
@@ -84,7 +84,7 @@ class Signup extends React.Component{
                     </div>
                     <div className="inputbox">
                         <div>
-                            <label>Create a password</label>
+                            <label className="inputprompt">Create a password</label>
                         </div>
                         <input className="littlebox" type="password"
                             value={this.state.password}
@@ -94,7 +94,7 @@ class Signup extends React.Component{
                     
                     <div className="inputbox">
                         <div>
-                            <label>What should we call you?</label>
+                            <label className="inputprompt">What should we call you?</label>
                         </div>
                         <input className="littlebox" type="text" 
                         value={this.state.username} 
@@ -107,7 +107,7 @@ class Signup extends React.Component{
            
                     <div className="dob">
                         <div>
-                            <label>What's your date of birth?</label>
+                            <label className="inputprompt">What's your date of birth?</label>
                         </div>
                         <div className="bdaybox">
                             <label className="choiceunit">Month</label>
@@ -139,7 +139,7 @@ class Signup extends React.Component{
                         </div>
                     </div>
                     <div>
-                        <label>What's your gender?</label>
+                        <label className="inputprompt">What's your gender?</label>
                     </div>
                     <div className="genderchoices">
                         <label className="choiceunit">
