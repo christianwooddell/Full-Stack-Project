@@ -67,7 +67,9 @@ class Signup extends React.Component{
                     </div>
                 </a>
                 <h3>Sign up for free to start listening.</h3>
-                <a className="demologin" onClick={() => this.loginDemo()}>DEMO LOGIN</a>
+                <div className="demologincontainer">
+                    <a className="demologin" onClick={() => this.loginDemo()}>DEMO LOGIN</a>
+                </div>
                 <form>
                     <div className="inputbox">
                         <div>
