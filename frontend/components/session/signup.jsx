@@ -19,9 +19,20 @@ class Signup extends React.Component{
         };
         this.handleSubmit = this.handleSubmit.bind(this);
     }
-    // componentWillUnmount() {
-    //     this.props.clearErrors();
-    // }
+
+    componentWillUnmount() {
+        this.props.clearSessionErrors();
+    }
+
+    renderErrors() {
+        return (
+            <div className="errormessages">
+                {this.props.errors.map((error, id) => (
+                    <p key={id}>{error}</p>
+                ))}
+            </div>
+        )
+    }
 
     handleInput(type) {
         return (e) => {
@@ -32,7 +43,7 @@ class Signup extends React.Component{
     handleSubmit(e) {
         e.preventDefault();
         this.props.signup(this.state)
-            .then( () => this.props.history.push("/home")); //redirect to index once we're logged in
+            .then( () => this.props.history.push("/home"));
     }
 
     render(){
@@ -138,7 +149,9 @@ class Signup extends React.Component{
                     <p>By clicking on Sign up, you agree to Spotifina's Terms and Conditions of Use.</p>
                     <p>To learn more about how Spotifina collects, uses, shares and protects your personal data please read Spotifina's Privacy Policy.</p>
                     <button type="submit" className="signupbutton" onClick={this.handleSubmit}>SIGN UP</button>
+                    {this.renderErrors()}
                 </form>
+
 
                 <h4 className="not-new-user">Have an account?
                         <Link to="/login" className="login-link">Log in.</Link>

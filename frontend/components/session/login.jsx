@@ -13,21 +13,36 @@ class Login extends React.Component{
         }
         this.handleSubmit = this.handleSubmit.bind(this);
     }
-    componentWillUnmount() {
-        this.props.clearSessionErrors();
-    }
 
+    
+    
     handleInput(type) {
         return (e) => {
             this.setState({ [type]: e.target.value })
         };
     }
-
+    
     handleSubmit(e) {
         e.preventDefault();
         const user = Object.assign({}, this.state);
         this.props.login(user)
-            .then(() => this.props.history.push("/home"));
+        .then(() => this.props.history.push("/home"));
+    }
+    
+
+    componentWillUnmount() {
+        this.props.clearSessionErrors();
+    }
+    
+
+    renderErrors() {
+        return (
+            <div className="errormessages">
+                {this.props.errors.map((error, id) => (
+                    <p key={id}>{error}</p>
+                ))}
+            </div>
+        )
     }
 
     render() {
@@ -62,6 +77,7 @@ class Login extends React.Component{
                     <div id="btnlogincontainer">
                         <button className="btn-login">LOG IN</button>
                     </div>
+                    {this.renderErrors()}
                     <h4>Don't have an account?</h4>
                 
                 </form>
