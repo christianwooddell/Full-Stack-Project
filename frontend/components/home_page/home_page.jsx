@@ -3,26 +3,23 @@ import { render } from "react-dom";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSpotify } from "@fortawesome/free-brands-svg-icons";
-import MusicPlayerNavBar from "../music_player/music_player_navbar";
 import NowPlaying from "../music_player/now_playing_container";
 
 const HomePage = ({ currentUser, logout }) => {
-    const personalGreeting = () => (
+    const displaypage = () => (
         <div>
-            <header className="homepage">
-                {/* <MusicPlayerNavBar /> */}
+            <div className="homepage">
+                    <button className="header-button" onClick={logout}>Log Out</button>
 
-            </header>
-                <button className="header-button" onClick={logout}>Log Out</button>
-
-            <footer>
-                <NowPlaying />
-            </footer>
+            </div>
+                <footer>
+                    <NowPlaying />
+                </footer>
         </div>
 
     );
 
-    return personalGreeting();
+    return displaypage();
 
 
 

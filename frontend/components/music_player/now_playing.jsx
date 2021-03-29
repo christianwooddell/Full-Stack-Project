@@ -55,7 +55,7 @@ class NowPlaying extends React.Component {
         // const { currentSong } = this.props;
         // const { audio_url } = currentSong;
         return (
-            <div className="nowplayingcontainer">
+            <div id="nowplayingcontainer">
                 <div>
                     <button className="play" onClick={this.togglePlay}>
                         <GrPlayFill />
