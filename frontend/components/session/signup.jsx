@@ -161,8 +161,7 @@ class Signup extends React.Component{
                                 onChange={this.handleInput("gender")} />Non-binary
                         </label>
                     </div>
-                    <p>By clicking on Sign up, you agree to Spotifina's Terms and Conditions of Use.</p>
-                    <p>To learn more about how Spotifina collects, uses, shares and protects your personal data please read Spotifina's Privacy Policy.</p>
+                    
                     <button type="submit" className="signupbutton" onClick={this.handleSubmit}>SIGN UP</button>
                     {this.renderErrors()}
                 </form>
