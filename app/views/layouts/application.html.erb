@@ -5,8 +5,8 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all' %>
-    <%= javascript_include_tag 'application' %>
+    <%= stylesheet_link_tag    "application", media: "all" %>
+    <%= javascript_include_tag "application" %>
     <% if current_user %>
       <script>
         window.currentUser = {
@@ -17,7 +17,7 @@
         window.audiourl = "<%= audio_url("beez.mp3") %>";
       </script>
     <% end %>
-    <%= favicon_link_tag asset_path('favicon.png') %>
+    <%= favicon_link_tag asset_path("favicon.png") %>
 
   </head>
 
