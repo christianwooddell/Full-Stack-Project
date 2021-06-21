@@ -25,7 +25,7 @@ class NowPlaying extends React.Component {
     // componentDidUpdate
 
     componentDidMount() {
-        this.props.getSong(1)
+        this.props.getSong(2)
     }
 
     // playAudio() {
@@ -58,7 +58,7 @@ class NowPlaying extends React.Component {
     render() {
         // const { currentSong } = this.props;
         // const { audio_url } = currentSong;
-        if (!this.props.songs[1]) return null;
+        if (!this.props.songs[2]) return null;
         return (
             <div id="nowplayingcontainer">
                 <div>
@@ -66,7 +66,7 @@ class NowPlaying extends React.Component {
                         <GrPlayFill />
                     </button>
                 </div>
-                    <audio ref={this.controls} className="nowplaying" src={this.props.songs[1].audio_url} />
+                    <audio ref={this.controls} className="nowplaying" src={this.props.songs[2].audio_url} />
             </div>
         )
     }
