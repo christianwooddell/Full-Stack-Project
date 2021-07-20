@@ -74,7 +74,7 @@ class NowPlaying extends React.Component {
                         <GrPlayFill />
                     </button>
                     <button className="nextsong" onClick={this.nextSong}>
-                        next
+                        next song
                     </button>
                 </div>
                     <audio ref={this.controls} className="nowplaying" src={this.props.songs[this.state.currentSong].audio_url} />
