@@ -49,9 +49,12 @@ class NowPlaying extends React.Component {
     }
 
     nextSong() {
+        // smth to loop the songs
         let nextSong = this.state.currentSong + 1
         this.setState({currentSong: nextSong})
     }
+
+
 
     // playAudio() {
     //     let audio = this.controls.current;
@@ -76,6 +79,7 @@ class NowPlaying extends React.Component {
                     <button className="nextsong" onClick={this.nextSong}>
                         next song
                     </button>
+                   
                 </div>
                     <audio ref={this.controls} className="nowplaying" src={this.props.songs[this.state.currentSong].audio_url} />
             </div>
