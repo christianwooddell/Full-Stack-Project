@@ -29645,3 +29645,327 @@ Processing by Api::SongsController#index as JSON
 Completed 200 OK in 43ms (Views: 39.2ms | ActiveRecord: 2.9ms)
 
 
+Started GET "/" for ::1 at 2021-07-22 14:31:53 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "Rh054g4fOCoWoMQQPdFKeA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 625ms (Views: 621.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2021-07-22 14:31:56 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "Rh054g4fOCoWoMQQPdFKeA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 42ms (Views: 38.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2021-07-22 14:32:12 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "Rh054g4fOCoWoMQQPdFKeA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 46ms (Views: 42.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2021-07-22 14:32:55 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "Rh054g4fOCoWoMQQPdFKeA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 660ms (Views: 656.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/songs" for ::1 at 2021-07-22 14:32:56 -0700
+Processing by Api::SongsController#index as JSON
+  Rendering api/songs/index.json.jbuilder
+  [1m[36mSong Load (0.7ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/views/api/songs/index.json.jbuilder:5
+  [1m[36mActiveStorage::Attachment Load (1.0ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Song"], ["name", "audio_file"], ["LIMIT", 1]]
+  ↳ app/views/api/songs/_song.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/api/songs/_song.json.jbuilder:3
+  Rendered api/songs/_song.json.jbuilder (6.4ms)
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Song"], ["name", "audio_file"], ["LIMIT", 1]]
+  ↳ app/views/api/songs/_song.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/api/songs/_song.json.jbuilder:3
+  Rendered api/songs/_song.json.jbuilder (3.6ms)
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "Song"], ["name", "audio_file"], ["LIMIT", 1]]
+  ↳ app/views/api/songs/_song.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/api/songs/_song.json.jbuilder:3
+  Rendered api/songs/_song.json.jbuilder (4.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 4], ["record_type", "Song"], ["name", "audio_file"], ["LIMIT", 1]]
+  ↳ app/views/api/songs/_song.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/api/songs/_song.json.jbuilder:3
+  Rendered api/songs/_song.json.jbuilder (3.8ms)
+  Rendered api/songs/index.json.jbuilder (24.9ms)
+Completed 200 OK in 34ms (Views: 29.0ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--48c1419c8fc7a9e11a948b0097f2ce9266417d30/beezinthetrap.mp3" for ::1 at 2021-07-22 14:32:56 -0700
+Processing by ActiveStorage::BlobsController#show as MP3
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--48c1419c8fc7a9e11a948b0097f2ce9266417d30", "filename"=>"beezinthetrap"}
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/christian/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (1.2ms) [0m[34mGenerated URL for file at key: 2LJgZBGzn4S5FS56k2wvf7Bx (https://spotifina-dev.s3.amazonaws.com/2LJgZBGzn4S5FS56k2wvf7Bx?response-content-disposition=attachment%3B%20filename%3D%22beezinthetrap.mp3%22%3B%20filename%2A%3DUTF-8%27%27beezinthetrap.mp3&response-content-type=audio%2Fmpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA6AYSMPOL4CWZT5UR%2F20210722%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210722T213256Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=09af6ec348959eb7052cf130ab0eda626cf67919537341db69e530dcd97ed4aa)[0m
+Redirected to https://spotifina-dev.s3.amazonaws.com/2LJgZBGzn4S5FS56k2wvf7Bx?response-content-disposition=attachment%3B%20filename%3D%22beezinthetrap.mp3%22%3B%20filename%2A%3DUTF-8%27%27beezinthetrap.mp3&response-content-type=audio%2Fmpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA6AYSMPOL4CWZT5UR%2F20210722%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210722T213256Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=09af6ec348959eb7052cf130ab0eda626cf67919537341db69e530dcd97ed4aa
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2021-07-22 14:33:40 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "Rh054g4fOCoWoMQQPdFKeA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (2.6ms)
+  Rendered static_pages/root.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 666ms (Views: 663.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/songs" for ::1 at 2021-07-22 14:33:41 -0700
+Processing by Api::SongsController#index as JSON
+  Rendering api/songs/index.json.jbuilder
+  [1m[36mSong Load (0.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/views/api/songs/index.json.jbuilder:5
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Song"], ["name", "audio_file"], ["LIMIT", 1]]
+  ↳ app/views/api/songs/_song.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/api/songs/_song.json.jbuilder:3
+  Rendered api/songs/_song.json.jbuilder (3.8ms)
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Song"], ["name", "audio_file"], ["LIMIT", 1]]
+  ↳ app/views/api/songs/_song.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/api/songs/_song.json.jbuilder:3
+  Rendered api/songs/_song.json.jbuilder (3.5ms)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "Song"], ["name", "audio_file"], ["LIMIT", 1]]
+  ↳ app/views/api/songs/_song.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/api/songs/_song.json.jbuilder:3
+  Rendered api/songs/_song.json.jbuilder (4.7ms)
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 4], ["record_type", "Song"], ["name", "audio_file"], ["LIMIT", 1]]
+  ↳ app/views/api/songs/_song.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/api/songs/_song.json.jbuilder:3
+  Rendered api/songs/_song.json.jbuilder (3.9ms)
+  Rendered api/songs/index.json.jbuilder (22.4ms)
+Completed 200 OK in 33ms (Views: 29.3ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--48c1419c8fc7a9e11a948b0097f2ce9266417d30/beezinthetrap.mp3" for ::1 at 2021-07-22 14:33:42 -0700
+Processing by ActiveStorage::BlobsController#show as MP3
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--48c1419c8fc7a9e11a948b0097f2ce9266417d30", "filename"=>"beezinthetrap"}
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/christian/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (0.9ms) [0m[34mGenerated URL for file at key: 2LJgZBGzn4S5FS56k2wvf7Bx (https://spotifina-dev.s3.amazonaws.com/2LJgZBGzn4S5FS56k2wvf7Bx?response-content-disposition=attachment%3B%20filename%3D%22beezinthetrap.mp3%22%3B%20filename%2A%3DUTF-8%27%27beezinthetrap.mp3&response-content-type=audio%2Fmpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA6AYSMPOL4CWZT5UR%2F20210722%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210722T213342Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=2727219de840e561a42c24ce3203ad67d59686e33c3d4c9cfada18b84498f41c)[0m
+Redirected to https://spotifina-dev.s3.amazonaws.com/2LJgZBGzn4S5FS56k2wvf7Bx?response-content-disposition=attachment%3B%20filename%3D%22beezinthetrap.mp3%22%3B%20filename%2A%3DUTF-8%27%27beezinthetrap.mp3&response-content-type=audio%2Fmpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA6AYSMPOL4CWZT5UR%2F20210722%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210722T213342Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=2727219de840e561a42c24ce3203ad67d59686e33c3d4c9cfada18b84498f41c
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-07-22 14:34:10 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "Rh054g4fOCoWoMQQPdFKeA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 46ms (Views: 42.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/songs" for ::1 at 2021-07-22 14:34:11 -0700
+Processing by Api::SongsController#index as JSON
+  Rendering api/songs/index.json.jbuilder
+  [1m[36mSong Load (0.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/views/api/songs/index.json.jbuilder:5
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Song"], ["name", "audio_file"], ["LIMIT", 1]]
+  ↳ app/views/api/songs/_song.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/api/songs/_song.json.jbuilder:3
+  Rendered api/songs/_song.json.jbuilder (3.3ms)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Song"], ["name", "audio_file"], ["LIMIT", 1]]
+  ↳ app/views/api/songs/_song.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/api/songs/_song.json.jbuilder:3
+  Rendered api/songs/_song.json.jbuilder (3.4ms)
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "Song"], ["name", "audio_file"], ["LIMIT", 1]]
+  ↳ app/views/api/songs/_song.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/api/songs/_song.json.jbuilder:3
+  Rendered api/songs/_song.json.jbuilder (3.2ms)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 4], ["record_type", "Song"], ["name", "audio_file"], ["LIMIT", 1]]
+  ↳ app/views/api/songs/_song.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/api/songs/_song.json.jbuilder:3
+  Rendered api/songs/_song.json.jbuilder (3.1ms)
+  Rendered api/songs/index.json.jbuilder (19.5ms)
+Completed 200 OK in 28ms (Views: 24.8ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ddd619a8c2d0dc49b5e8130d783a669f36d58ef6/The%20Sky.mp3" for ::1 at 2021-07-22 14:34:14 -0700
+Processing by ActiveStorage::BlobsController#show as MP3
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ddd619a8c2d0dc49b5e8130d783a669f36d58ef6", "filename"=>"The Sky"}
+  [1m[36mActiveStorage::Blob Load (0.7ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/christian/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (1.5ms) [0m[34mGenerated URL for file at key: GDRa27oeepSZFtEa1aGNNU5E (https://spotifina-dev.s3.amazonaws.com/GDRa27oeepSZFtEa1aGNNU5E?response-content-disposition=attachment%3B%20filename%3D%22The%20Sky.mp3%22%3B%20filename%2A%3DUTF-8%27%27The%2520Sky.mp3&response-content-type=audio%2Fmpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA6AYSMPOL4CWZT5UR%2F20210722%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210722T213414Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=190f13bd9d1dc97f762bb27ef9ce9ae05797062d888e67f7ed4412cd689af2d8)[0m
+Redirected to https://spotifina-dev.s3.amazonaws.com/GDRa27oeepSZFtEa1aGNNU5E?response-content-disposition=attachment%3B%20filename%3D%22The%20Sky.mp3%22%3B%20filename%2A%3DUTF-8%27%27The%2520Sky.mp3&response-content-type=audio%2Fmpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA6AYSMPOL4CWZT5UR%2F20210722%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210722T213414Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=190f13bd9d1dc97f762bb27ef9ce9ae05797062d888e67f7ed4412cd689af2d8
+Completed 302 Found in 6ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e9bc7ce375e683c81bcf00ed26c11f7e051ac74b/atlantyda.mp3" for ::1 at 2021-07-22 14:34:18 -0700
+Processing by ActiveStorage::BlobsController#show as MP3
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e9bc7ce375e683c81bcf00ed26c11f7e051ac74b", "filename"=>"atlantyda"}
+  [1m[36mActiveStorage::Blob Load (0.8ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /Users/christian/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (1.2ms) [0m[34mGenerated URL for file at key: 12gZyGCZcCfo2EWZCc8EeKfi (https://spotifina-dev.s3.amazonaws.com/12gZyGCZcCfo2EWZCc8EeKfi?response-content-disposition=attachment%3B%20filename%3D%22atlantyda.mp3%22%3B%20filename%2A%3DUTF-8%27%27atlantyda.mp3&response-content-type=audio%2Fmpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA6AYSMPOL4CWZT5UR%2F20210722%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210722T213418Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=b026e9b5acbeda0042133c2b71e414c4376f5586b160db1a0fb9fb6df32f7c62)[0m
+Redirected to https://spotifina-dev.s3.amazonaws.com/12gZyGCZcCfo2EWZCc8EeKfi?response-content-disposition=attachment%3B%20filename%3D%22atlantyda.mp3%22%3B%20filename%2A%3DUTF-8%27%27atlantyda.mp3&response-content-type=audio%2Fmpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA6AYSMPOL4CWZT5UR%2F20210722%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210722T213418Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=b026e9b5acbeda0042133c2b71e414c4376f5586b160db1a0fb9fb6df32f7c62
+Completed 302 Found in 4ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4b2f93244ec129bd9f34725580395aba7b6f2998/Nosleep.mp3" for ::1 at 2021-07-22 14:34:21 -0700
+Processing by ActiveStorage::BlobsController#show as MP3
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4b2f93244ec129bd9f34725580395aba7b6f2998", "filename"=>"Nosleep"}
+  [1m[36mActiveStorage::Blob Load (0.8ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /Users/christian/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (1.7ms) [0m[34mGenerated URL for file at key: SkvnNJae67a2Nv54fVQ26SJt (https://spotifina-dev.s3.amazonaws.com/SkvnNJae67a2Nv54fVQ26SJt?response-content-disposition=attachment%3B%20filename%3D%22Nosleep.mp3%22%3B%20filename%2A%3DUTF-8%27%27Nosleep.mp3&response-content-type=audio%2Fmpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA6AYSMPOL4CWZT5UR%2F20210722%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210722T213421Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=3d1c28e125a25acbef7d2fe902bd9566b846f642ad7bdc623eaaafdf172541a6)[0m
+Redirected to https://spotifina-dev.s3.amazonaws.com/SkvnNJae67a2Nv54fVQ26SJt?response-content-disposition=attachment%3B%20filename%3D%22Nosleep.mp3%22%3B%20filename%2A%3DUTF-8%27%27Nosleep.mp3&response-content-type=audio%2Fmpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA6AYSMPOL4CWZT5UR%2F20210722%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210722T213421Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=3d1c28e125a25acbef7d2fe902bd9566b846f642ad7bdc623eaaafdf172541a6
+Completed 302 Found in 5ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2021-07-22 14:34:26 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "Rh054g4fOCoWoMQQPdFKeA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 52ms (Views: 49.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/songs" for ::1 at 2021-07-22 14:34:27 -0700
+Processing by Api::SongsController#index as JSON
+  Rendering api/songs/index.json.jbuilder
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/views/api/songs/index.json.jbuilder:5
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Song"], ["name", "audio_file"], ["LIMIT", 1]]
+  ↳ app/views/api/songs/_song.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/api/songs/_song.json.jbuilder:3
+  Rendered api/songs/_song.json.jbuilder (3.9ms)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Song"], ["name", "audio_file"], ["LIMIT", 1]]
+  ↳ app/views/api/songs/_song.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/api/songs/_song.json.jbuilder:3
+  Rendered api/songs/_song.json.jbuilder (3.9ms)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "Song"], ["name", "audio_file"], ["LIMIT", 1]]
+  ↳ app/views/api/songs/_song.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/api/songs/_song.json.jbuilder:3
+  Rendered api/songs/_song.json.jbuilder (4.2ms)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 4], ["record_type", "Song"], ["name", "audio_file"], ["LIMIT", 1]]
+  ↳ app/views/api/songs/_song.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/api/songs/_song.json.jbuilder:3
+  Rendered api/songs/_song.json.jbuilder (4.2ms)
+  Rendered api/songs/index.json.jbuilder (21.7ms)
+Completed 200 OK in 31ms (Views: 27.5ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ddd619a8c2d0dc49b5e8130d783a669f36d58ef6/The%20Sky.mp3" for ::1 at 2021-07-22 14:34:30 -0700
+Processing by ActiveStorage::BlobsController#show as MP3
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ddd619a8c2d0dc49b5e8130d783a669f36d58ef6", "filename"=>"The Sky"}
+  [1m[36mActiveStorage::Blob Load (0.8ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/christian/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (1.8ms) [0m[34mGenerated URL for file at key: GDRa27oeepSZFtEa1aGNNU5E (https://spotifina-dev.s3.amazonaws.com/GDRa27oeepSZFtEa1aGNNU5E?response-content-disposition=attachment%3B%20filename%3D%22The%20Sky.mp3%22%3B%20filename%2A%3DUTF-8%27%27The%2520Sky.mp3&response-content-type=audio%2Fmpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA6AYSMPOL4CWZT5UR%2F20210722%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210722T213430Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=35b05b4463b3f9cf0c7060d4c9800dd62e9a3abb012a3b2a5e2eafa63ccf2d5a)[0m
+Redirected to https://spotifina-dev.s3.amazonaws.com/GDRa27oeepSZFtEa1aGNNU5E?response-content-disposition=attachment%3B%20filename%3D%22The%20Sky.mp3%22%3B%20filename%2A%3DUTF-8%27%27The%2520Sky.mp3&response-content-type=audio%2Fmpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA6AYSMPOL4CWZT5UR%2F20210722%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210722T213430Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=35b05b4463b3f9cf0c7060d4c9800dd62e9a3abb012a3b2a5e2eafa63ccf2d5a
+Completed 302 Found in 5ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2021-07-22 14:34:43 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "Rh054g4fOCoWoMQQPdFKeA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 729ms (Views: 724.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/songs" for ::1 at 2021-07-22 14:34:44 -0700
+Processing by Api::SongsController#index as JSON
+  Rendering api/songs/index.json.jbuilder
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/views/api/songs/index.json.jbuilder:5
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Song"], ["name", "audio_file"], ["LIMIT", 1]]
+  ↳ app/views/api/songs/_song.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (0.7ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/api/songs/_song.json.jbuilder:3
+  Rendered api/songs/_song.json.jbuilder (5.0ms)
+  [1m[36mActiveStorage::Attachment Load (0.9ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Song"], ["name", "audio_file"], ["LIMIT", 1]]
+  ↳ app/views/api/songs/_song.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (1.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/api/songs/_song.json.jbuilder:3
+  Rendered api/songs/_song.json.jbuilder (5.9ms)
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "Song"], ["name", "audio_file"], ["LIMIT", 1]]
+  ↳ app/views/api/songs/_song.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/api/songs/_song.json.jbuilder:3
+  Rendered api/songs/_song.json.jbuilder (2.8ms)
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 4], ["record_type", "Song"], ["name", "audio_file"], ["LIMIT", 1]]
+  ↳ app/views/api/songs/_song.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/api/songs/_song.json.jbuilder:3
+  Rendered api/songs/_song.json.jbuilder (3.1ms)
+  Rendered api/songs/index.json.jbuilder (23.3ms)
+Completed 200 OK in 34ms (Views: 28.7ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/" for ::1 at 2021-07-22 14:35:38 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "Rh054g4fOCoWoMQQPdFKeA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 771ms (Views: 767.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/songs" for ::1 at 2021-07-22 14:35:39 -0700
+Processing by Api::SongsController#index as JSON
+  Rendering api/songs/index.json.jbuilder
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/views/api/songs/index.json.jbuilder:5
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Song"], ["name", "audio_file"], ["LIMIT", 1]]
+  ↳ app/views/api/songs/_song.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/api/songs/_song.json.jbuilder:3
+  Rendered api/songs/_song.json.jbuilder (3.9ms)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Song"], ["name", "audio_file"], ["LIMIT", 1]]
+  ↳ app/views/api/songs/_song.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/api/songs/_song.json.jbuilder:3
+  Rendered api/songs/_song.json.jbuilder (4.3ms)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "Song"], ["name", "audio_file"], ["LIMIT", 1]]
+  ↳ app/views/api/songs/_song.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/api/songs/_song.json.jbuilder:3
+  Rendered api/songs/_song.json.jbuilder (3.3ms)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 4], ["record_type", "Song"], ["name", "audio_file"], ["LIMIT", 1]]
+  ↳ app/views/api/songs/_song.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/api/songs/_song.json.jbuilder:3
+  Rendered api/songs/_song.json.jbuilder (4.0ms)
+  Rendered api/songs/index.json.jbuilder (21.4ms)
+Completed 200 OK in 32ms (Views: 28.8ms | ActiveRecord: 3.0ms)
+
+

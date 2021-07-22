@@ -3,11 +3,11 @@ import { getSong } from "../../actions/song_actions";
 import { fetchSongs } from "../../util/song_api_util";
 import { currentSong } from "./now_playing_container";
 import { playCurrentSong } from "../../actions/player_actions"
-import { nextSong, previousSong } from "../../actions/queue_actions";
-import {GrPlayFill, GrChapterNext} from "react-icons/gr"
+import { nextUp, previousSong } from "../../actions/queue_actions";
+import { GrPlayFill, GrChapterNext } from "react-icons/gr"
 
 class NowPlaying extends React.Component {
-    constructor(props){
+    constructor(props) {
         super(props);
         this.state = {
             playStatus: false,
@@ -40,22 +40,21 @@ class NowPlaying extends React.Component {
     // }
 
     togglePlay() {
-        if (this.state.playStatus){
+        if (this.state.playStatus) {
             this.controls.current.pause();
-            this.setState({playStatus: false});
+            this.setState({ playStatus: false });
         } else {
             this.controls.current.play();
-            this.setState({playStatus: true});
+            this.setState({ playStatus: true });
         }
     }
 
     nextSong() {
         // smth to loop the songs
         let nextSong = this.state.currentSong + 1
-        this.setState({currentSong: nextSong})
+        this.setState({ currentSong: nextSong })
         // this.controls.current.play();
-        this.setState({playStatus: true});
-        // this.setState({playStatus: false});
+        this.setState({ playStatus: false });
     }
 
 
@@ -64,7 +63,7 @@ class NowPlaying extends React.Component {
     //     let audio = this.controls.current;
     //     let playing = false;
     //     audio.play();
-        
+
     //     this.setState({ playStatus: true })
     // }
 
@@ -83,9 +82,9 @@ class NowPlaying extends React.Component {
                     <button className="nextsong" onClick={this.nextSong}>
                         <GrChapterNext />
                     </button>
-                   
+
                 </div>
-                    <audio ref={this.controls} className="nowplaying" src={this.props.songs[this.state.currentSong].audio_url} />
+                <audio ref={this.controls} className="nowplaying" src={this.props.songs[this.state.currentSong].audio_url} />
             </div>
         )
     }
