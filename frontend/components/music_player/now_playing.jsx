@@ -23,6 +23,7 @@ class NowPlaying extends React.Component {
         this.togglePlay = this.togglePlay.bind(this);
         this.nextSong = this.nextSong.bind(this);
         this.previousSong = this.previousSong.bind(this);
+        // this.playSelected = this.playSelected.bind(this);
 
     }
 
@@ -65,6 +66,12 @@ class NowPlaying extends React.Component {
         // this.controls.current.play();
         this.setState({ playStatus: false });
     }
+
+    // playSelected() {
+
+    // }
+
+
 
     
 
