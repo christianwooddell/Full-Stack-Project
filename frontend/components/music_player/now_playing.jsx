@@ -10,7 +10,7 @@ class NowPlaying extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            playStatus: true,
+            playStatus: false,
             currentSong: 1,
             // muted: false,
             // currentTime = 0,
@@ -53,6 +53,9 @@ class NowPlaying extends React.Component {
         // smth to loop the songs
         let nextSong = this.state.currentSong + 1
         this.setState({currentSong: nextSong})
+        // this.controls.current.play();
+        this.setState({playStatus: true});
+        // this.setState({playStatus: false});
     }
 
 
