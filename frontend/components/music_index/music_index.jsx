@@ -12,12 +12,14 @@ class MusicIndex extends React.Component {
     componentDidMount() {
         this.props.getSongs()
     }
-    
+
     render () {
         return (
-            <h1>index</h1>
-        )
-
+            <div>
+                <h1>list of all songs</h1>
+            </div>
+            )
+            
     }
 }
 
